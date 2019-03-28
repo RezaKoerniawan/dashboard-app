@@ -71,8 +71,6 @@ android {
     }
     buildTypes {
         debug {
-            buildConfigField 'String', 'API_SAMPLE', '"https://jsonplaceholder.typicode.com"'
-            buildConfigField 'String', 'API_NEWS', '"https://hacker-news.firebaseio.com/v0/"'
             buildConfigField 'String', 'API_MOVIES', '"http://www.mocky.io/"'
             minifyEnabled false
             debuggable true
@@ -81,8 +79,6 @@ android {
             signingConfig signingConfigs.debug
         }
         release {
-            buildConfigField 'String', 'API_SAMPLE', '"https://jsonplaceholder.typicode.com"'
-            buildConfigField 'String', 'API_NEWS', '"https://hacker-news.firebaseio.com/v0/"'
             buildConfigField 'String', 'API_MOVIES', '"http://www.mocky.io/"'
             minifyEnabled true
             shrinkResources true
@@ -108,8 +104,6 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
 
-    implementation 'org.jetbrains.anko:anko-sqlite:0.10.5'
-
     /*Android Dependency*/
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha03'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -127,6 +121,7 @@ dependencies {
     releaseImplementation 'com.ashokvarma.android:gander-no-op:1.4.0'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     implementation 'com.facebook.shimmer:shimmer:0.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
     implementation 'com.google.code.gson:gson:2.8.5'
 
     /*Android Test*/

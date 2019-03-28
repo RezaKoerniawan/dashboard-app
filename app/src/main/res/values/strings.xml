@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Alo</string>
+
+    <!--Splash-->
+    <string name="splash_title">Alo</string>
+
+    <!--Login-->
+    <string name="login_title">Login</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_button">Login</string>
+
+    <!--Dashboard-->
+    <string name="dashboard_menu_home">Home</string>
+    <string name="dashboard_menu_profile">Profile</string>
+
+    <!--Profile-->
+    <string name="profile_title">Profile</string>
+    <string name="profile_logout_button">Logout</string>
+    <string name="profile_sex">Male</string>
+    <string name="profile_phone">08123456789</string>
+
+</resources>
