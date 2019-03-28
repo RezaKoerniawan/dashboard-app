@@ -34,5 +34,10 @@
             android:name="com.reza.base.presentation.dashboard.DashboardActivity"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity
+            android:name="com.reza.base.presentation.detailpage.DetailPageActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 </manifest>

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.reza.base.R
 import com.reza.base.entity.MovieItem
+import com.reza.base.presentation.detailpage.DetailPageActivity
 
 
 /**
@@ -55,7 +56,7 @@ class HomePageItemListAdapter(private val context: Context, private val apiObjec
 
         fun bindItem(movieItem: MovieItem) {
             itemView.setOnClickListener {
-               Toast.makeText(it.context, adapterPosition.toString(), Toast.LENGTH_SHORT).show()
+                DetailPageActivity.startThisActivity(itemView.context)
             }
         }
     }
